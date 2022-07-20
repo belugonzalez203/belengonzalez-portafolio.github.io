@@ -350,11 +350,7 @@ body #menu__nav .checkbtn{
 
     #mensaje{
         width: 200px;
-        
-    }
-
-    body #contacto{
-
+        margin-left: -16px;
     }
 
     body #contacto #form-contacto {
@@ -395,5 +391,9 @@ body #menu__nav .checkbtn{
 
     #acercade #copyright {
         font-size: 15px;
+    }
+
+    #contacto #form-contacto #enviarCorreo{
+        margin-left: 50px;
     }
 }
