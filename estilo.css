@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+   background: rgb(206, 218, 217);
+   user-select: none;
+}
+
+body #menu__nav {
+    background: rgb(71, 70, 70);
+    float: right;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+body #menu__nav li a{
+    color: rgb(228, 225, 225);
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body #menu__nav li a:hover{
+    color: rgb(71, 70, 70);
+    background:rgb(228, 225, 225);
+    border-radius: 7px;
+    transition: all 0.5s;
+}
+
+
+body #menu__nav ul {
+    float: right;
+}
+
+body #menu__nav ul li {
+    display:inline-block;
+    margin-right: 25px;
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+body #portada #img-portada {
+    width: 100%;
+    height: 91.1vh;
+    filter: brightness(0.5);
+}
+
+#portada #portada-present {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#portada #portada-present #portada-present-img {
+    width: 50%;
+    margin-bottom: -50px;
+}
+
+#portada #portada-present #portada-present-nombre {
+    font-size: 80px;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body #img-saludo-izq {
+    width: 15%;
+    position: sticky;
+    top: 50px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+body #img-saludo-der {
+    width: 15%;
+    position: sticky;
+    top: 50px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+body #principal{
+    position: relative;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 60px;
+}
+
+#principal2{
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    /*bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);*/
+}
+
+body #principal #principal-present {
+    border:solid 2px rgb(71, 70, 70) ;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(71, 70, 70);
+    padding: 20px;
+    line-height: 39px;
+}
+
+#principal #video{
+    width: 80%;
+    height: 370px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 25px;
+    margin-bottom: -30px;
+}
+
+.iconos{
+    width: 120px;
+    padding: 10px;
+}
+
+.div-iconos{
+    text-align: center;
+    border:solid 2px rgb(71, 70, 70) ;
+    border-radius: 20px;
+    width: 20%;
+}
+
+body #habilidades{
+    margin-bottom: 40px;
+}
+
+body #habilidades #hab-titulo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body #habilidades #hab1 {
+    display: flex;
+}
+
+body #habilidades #hab2{
+    display: flex;
+}
+
+.div-iconos {
+    margin-left: 20%;
+    margin-right: 30px;
+    height: 150px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body #contacto{
+   text-align: center;
+   margin: 40px;
+}
+
+.contact-logos{
+    margin-top: 20px;
+    width: 5%;
+    margin-left: 40px;
+}
+
+body #contacto #form-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 0;
+}
+
+#contacto #form-contacto #msj{
+    float: center;
+    transform: translate(5%);
+}
+
+#mensaje {
+    resize: none;
+}
+
+#lblmensaje{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 187px;
+}
+
+#contacto #form-contacto #lbl {
+    float: center;
+    margin-right: 120px;
+}
+
+#contacto #form-contacto #enviarCorreo {
+    width: 80px;
+    transform: translate(-35%);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contacto #form-contacto #nee{
+    position: relative;
+    top: 30%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nombre{
+    margin-bottom: 10px;
+    float: center;
+    font-family: none;
+}
+#email{
+    float: center;
+    font-family: none;
+}
+
+body #acercade{
+    background: rgb(18, 18, 18);
+    height: 25vh;
+}
+
+body #acercade #menu2 {
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+body #acercade #menu2 .li-menu a{
+    color: rgb(156, 154, 154);
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+body #acercade #menu2 .li-menu{
+    margin: 15px;
+    margin-top: 50px;
+}
+
+body #acercade #copyright {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: rgb(130, 129, 129);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#check{
+    display: none;
+}
+
+body #menu__nav .checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 65px;
+    margin-right: 40px; 
+    color: rgb(228, 225, 225);
+    display: none;
+}
+
+/*  RESPOSIVE DESIGN    */
+
+@media (max-width: 460px){
+    body #menu__nav .checkbtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    body #menu__nav #ul-menu{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: rgb(71, 70, 70);
+        top: 62px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    body #menu__nav #ul-menu li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #menu__nav #ul-menu li a {
+        font-size: 20px;
+    }
+
+    #menu__nav #ul-menu li a:hover{
+        background: white;
+        color: rgb(21, 22, 22);
+        
+    }
+
+    body #menu__nav #check:checked ~ #ul-menu{
+        left: 0;
+    }
+}
+
+
+
+@media (max-width: 530px){
+
+    body #portada #portada-present #portada-present-nombre {
+        font-size: 55px;
+        margin-top: 60px;
+    }
+
+    body #img-saludo-izq {
+        margin-left: 5px;
+        position: initial;
+        margin-top: 45px;
+    }
+
+    body #img-saludo-der {
+        margin-right: 5px;
+        position: initial;
+        margin-top: 45px;
+    }
+
+    body #principal #principal-present{
+        margin-top: 10px;
+        width: 170px;
+        float: center;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #principal #video{
+        height: 150px;
+        width: 250px;
+    }
+
+    .div-iconos{
+        height: 95px;
+    }
+
+    #mensaje{
+        width: 200px;
+        
+    }
+
+    body #contacto{
+
+    }
+
+    body #contacto #form-contacto {
+        display: initial;
+    }
+
+    body #contacto #form-contacto #nee {
+        display: initial;
+        margin-bottom: 15px;
+    }
+
+    body #contacto #form-contacto #msj #lblmensaje {
+        margin-right: 132px;
+
+    }
+
+    body #contacto .contact-logos {
+        margin: 10px;
+        width: 25px;
+    }
+
+    body #acercade #menu2{
+        display: initial;
+        position: initial;
+        text-align: center;
+        margin-top: 1px;
+    }
+
+    body #acercade #menu2 .li-menu{
+        margin: 15px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    body #acercade{
+        height: 32vh;
+    }
+
+    #acercade #copyright {
+        font-size: 15px;
+    }
+}

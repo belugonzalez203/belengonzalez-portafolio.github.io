@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belen Gonzalez | Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="imgs/BGpng.ico">
+</head>
+<body>
+    <nav id="menu__nav">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><b>☰</b></label>
+
+        <ul id="ul-menu">
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#acercade">Acerca de</a></li>
+        </ul>
+    </nav>
+    <div id="portada">
+        <img src="imgs/portada.webp" id="img-portada" alt="portadaBGportafolio">
+        <div id="portada-present">
+            <img src="imgs/BGpng.png" id="portada-present-img">
+            <h1 id="portada-present-nombre">Belen Gonzalez</h1>
+        </div>
+    </div>
+
+    <div id="principal">
+        <img src="imgs/contento.png" id="img-saludo-izq">
+        <img src="imgs/contento.png" id="img-saludo-der">
+        
+        <div id="principal2">
+            <p id="principal-present">
+                Hola, actualmente estoy estudiando ingeniería de Sistemas y tengo conocimiento de algunas herramientas de programación.
+                <br>Entre mis habilidades blandas me gusta trabajar en equipo dando lo mejor de mis conocimientos para obtener los resultados más óptimos, tengo facilidad para adaptarme al cambio y una comunicación asertiva.
+            </p>
+            <iframe src="https://www.youtube.com/embed/8lMIdrlIWOQ?controls=0" id="video"></iframe>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div id="habilidades">
+        <h2 id="hab-titulo">Frontend</h2>
+        <div id="hab1">
+            <div class="div-iconos">
+                <img src="imgs/html5.png" id="html-icon" class="iconos" >
+                <p>HTML</p>
+            </div>
+            <div class="div-iconos">
+                <img src="imgs/css3.png" id="css-icon" class="iconos"> <br>
+                <p>CSS</p>
+            </div>
+        </div>
+
+        <h2 id="hab-titulo">Backend</h2>
+        <div id="hab2">
+            <div class="div-iconos">
+                <img src="imgs/java.png" id="java-icon" class="iconos">
+                <p>JAVA</p>
+            </div>
+            <div class="div-iconos">
+                <img src="imgs/c.png" id="c-icon" class="iconos">
+                <p>C</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="contacto">
+        
+        <form name="formulario-contacto" netify id="form-contacto">
+            <div id="nee">
+                <label for="nombre" id="lbl">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre"> <br>
+                <br>
+
+                <label for="email" id="lbl">Email:</label><br>
+                <input type="email" name="email" id="email"> <br>
+            </div>
+
+            <div id="msj">
+                <label for="mensaje" id="lblmensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
+            </div>
+            <br>
+            <input id="enviarCorreo" type="submit" value="Enviar">
+        </form>
+        <hr>
+        <!--<h3>Para contactarme estas son mis redes sociales:</h3>-->
+        <a href="https://api.whatsapp.com/send?phone=59178345551&text=" target="_blank"><img src="imgs/whatsapp.png" class="contact-logos"></a>
+        <a href="https://github.com/belugonzalez203" target="_blank"><img src="imgs/github.png" class="contact-logos"></a>
+        <a href="https://www.instagram.com/belugonzalez_93/" target="_blank"><img src="imgs/instagram.png" class="contact-logos"></a>
+        <a href="https://www.facebook.com/profile.php?id=100006698685798" target="_blank"><img src="imgs/facebook.png" class="contact-logos"></a>
+    </div>
+
+
+    <hr>
+
+
+
+    <div id="acercade">
+        <ul id="menu2">
+            <li class="li-menu"><a href="#principal">Principal</a></li>
+            <li class="li-menu"><a href="#habilidades">Habilidades</a></li>
+            <li class="li-menu"><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <h5 id="copyright">Copyright © 2022 Carmen Belen Gonzalez Galvez</h5>
+    </div>
+
+
+
+</body>
+<script>
+    const btnEnvio= document.getElementById('enviarCorreo')
+
+    btnEnvio.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value
+        const nombre = document.getElementById('nombre').value
+        const mensaje = document.getElementById('mensaje').value
+
+        window.location.href = `mailto:belengonzalez26072000@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A%20${nombre}%0ACorreo%3A%20${email}%0AMensaje%3A%20${mensaje}%0A`
+
+    })
+</script>
+</html>
